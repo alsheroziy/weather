@@ -1,0 +1,118 @@
+:root{
+    /* bg colors */
+    --bg-ligth-white:rgba(255, 255, 255, 1);
+    --bg-white:#fff;
+    --bg-blue:rgba(71, 147, 255, 0.2);
+    --bg-card-blue:rgba(71, 147, 255, 0.2);
+    --bg-btn:#4793FF;
+    --bg-loading:rgba(71, 147, 255, 0.2);
+    /* text color */
+    --color-black:rgba(0, 0, 0, 1);
+    --color-blue:rgba(71, 147, 255, 1);
+    --color-ligth-blue:rgba(71, 147, 255, 1);
+    --color-ligth:rgba(147, 156, 176, 1);
+    --color-gray:#939cb0;
+
+    /* shadows */
+    --box-shadow:rgba(180, 180, 180, 0.25);
+    --btn-shadow:rgba(180, 180, 180, 0.25);
+    --box-shadow-items:rgba(71, 147, 255, 0.2);
+
+}
+
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../Montserrat/Montserrat-VariableFont_wght.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    overflow-x: hidden;
+    transition: all .5s ease-in-out;
+    font-family: "Montserrat";
+     &::-webkit-scrollbar {
+        display: none;
+      }
+}
+body{
+    background: var(--bg-white);
+}
+.container{
+    width: 100%;
+    max-width: 1220px;
+    margin: 0 auto;
+}
+.bg-white{
+    background: var(--bg-white) !important;
+}
+.bg-ligth-white{
+    background: var(--bg-ligth-white);
+}
+.btn-shadow{
+    box-shadow: 2px 5px 25px -3px rgba(180, 180, 180, 0.25);
+}
+
+.color-ligth-blue{
+    color: var(--color-ligth-blue);
+}
+.color-ligth{
+    color: var(--color-ligth);
+}
+.card-bg{
+    background-color: var(--bg-card-blue);
+}
+.btn-bg-blue{
+    background: var(--bg-blue);
+}
+.bg-blue{
+    background: var(--bg-btn);
+}
+
+.text-black{
+    color: var(--color-black) !important;
+}
+.color-gray{
+    color: var(--color-gray);
+}
+.color-blue{
+    color: var(--bg-blue);
+}
+.box-shadow{
+    box-shadow: 2px 5px 25px -3px var(--box-shadow);
+}
+.shadow-items{
+    box-shadow: 1px 4px 10px -1px var(--box-shadow-items);
+}
+.top-border{
+    border-radius: 0px 0px 20px 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+}
+.box-shadow-card{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
+/* element ui input */
+
+.el-input{
+    .el-input__inner{
+        height: 37px;
+        border-radius: 10px;
+        background: var(--bg-blue);
+        outline: none;
+        border: none;
+        font-size: 1em;
+        font-weight: 500;
+        color: var(--color-black);
+         &::placeholder{
+            color: var(--color-black);
+            font-weight: 500;
+         }
+    }
+}
